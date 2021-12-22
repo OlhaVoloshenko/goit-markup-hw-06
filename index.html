@@ -348,18 +348,20 @@
     </div>
     </footer>
     <script src="./js/modal.js"></script>
-   <!-- <script>
+    <script>
       (() => {
         document
           .querySelector('.js-speaker-form')
           .addEventListener('submit', e => {
             e.preventDefault();
 
-            new FormData(e.currentTarget).forEach(value, name) =>
+            new FormData(e.currentTarget).forEach((value, name) =>
               console.log(`${name}: ${value}`),
-          );
-        });
+            );
+
+            e.currentTarget.reset();
+          });
       })();
-    </script>-->
+    </script>
   </body>
 </html>
