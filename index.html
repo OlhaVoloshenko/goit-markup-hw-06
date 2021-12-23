@@ -60,6 +60,38 @@
           </div>
     </div>
   </section>
+  <section class="container">
+    <form class="form" autocomplete="off">
+      <p class="form-title">Залиште свої контакти, ми Вам зателефонуємо</p>
+      
+      <label class="form-field">
+        <input type="text" class="form-input" name="name" minlength="2" maxlength="25" placeholder=" " required>
+        <span class="form-label">Ім'я</span>
+        <span class="form-icon">
+        </span>
+      </label>
+      <label class="form-field">
+        <input type="text" class="form-input" name="tel" pattern="[0-9]{2}[0-9]{3}-[0-9]{3}[0-9]{2}[0-9]{2}" title="38050-1112222" placeholder=" " required>
+        <span class="form-label">Телефон</span>
+        <span class="form-icon">
+        </span>
+      </label>
+      <label class="form-field">
+        <input type="email" class="form-input" name="mail" placeholder=" " required>
+        <span class="form-label">Пошта</span>
+        <span class="form-icon">
+        </span>
+      </label>
+
+      <label for="comment">Залиште коментар</label>
+      <textarea class="message" name="comment" id="comment" rows="8"></textarea>
+    <br />
+      <input type="checkbox" name="" id="polyci">
+      <label for="">Погоджуюсь з розсилкою та приймаю</label>
+      <br />
+      <button class="form-submit" type="submit">Залишити заявку</button>
+    </form>
+  </section>
   <section class="feature section">
     <div class="container">
       <h2 class="section-title">Наші можливості</h2> 

@@ -9,6 +9,7 @@
     --border-portfolio-cards: #EEEEEE;
     --border-portfolio-header: #ECECEC;
     --color-icons-items: #AFB1B8;
+    --color-form-bcgbutton: #188CE8;
 }
 /*html {
     box-sizing: border-box;
@@ -282,7 +283,7 @@ margin-left: 50px;
     border-radius: 4px;
     cursor: pointer;
 }
-
+/*modal+backdrop*/
 .backdrop {
     position: fixed;
     top: 0;
@@ -325,7 +326,6 @@ margin-left: 50px;
 
 .close-icon {
     position: absolute;
-    
 }
 .close {
     position: absolute;
@@ -342,7 +342,95 @@ margin-left: 50px;
     border-radius: 50%;
 
     cursor: pointer;
+}
+/*form for modal*/
+.form {
+    padding: 20px;
+    margin: 20px;
+    width: 528px;
+    outline: 1px solid var(--background-color-main);
+}
+.form-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03;
+    text-align: center;
+    color: var(--primary-text-color);
 
+    margin-bottom: 12px;
+}
+.form-field {
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+.form-field:focus-within > .form-icon,
+.form-input:not(:placeholder-shown) + .form-label {
+    background-color: var(--accent-text-color);
+}
+.form-field:focus-within > .form-label {
+    transform: translateY(-50px);
+    
+}
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+
+    transition: transform 250ms linear;
+}
+.form-input {
+    margin: 0;
+    padding: 11px 11px;
+   /* padding-left: 42px;*/
+   text-indent: 42px;
+    font: inherit;
+    border-radius: 3px;
+    border: 1px solid var(--primary-text-color);
+}
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-50px);
+}
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+
+    transform: translateY(-50%);
+
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+.form-submit {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin: 10px auto;
+    width: 200px;
+    color: var(--background-color);
+    background-color: var(--accent-text-color);
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: 0.06;
+    text-align: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: var(--accent-text-color);
+}
+.message {
+    font-family: inherit;
+    width: 448px;
+    resize: none;
 }
 /*feature*/
 
