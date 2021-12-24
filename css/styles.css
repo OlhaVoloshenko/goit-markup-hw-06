@@ -852,6 +852,7 @@ margin-left: 50px;
 
 .contacts-menu {
     display: inline-block;
+    width: 231px;
 }
 .contacts-item:not(:last-child) {
     margin-bottom: 9px;
