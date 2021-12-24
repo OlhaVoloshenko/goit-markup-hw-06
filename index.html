@@ -56,21 +56,21 @@
                   Ім'я
                   <input type="text" class="form-input" name="name" minlength="2" maxlength="50" placeholder=" " required>
                     <svg class="form-icon">
-                      <use href="./images/symbol-defs.svg#name-form"></use> ></use>
+                      <use href="./images/symbol-defs.svg#name-form"></use>
                     </svg>
                 </label>
                 <label class="form-field">
                   Телефон
                   <input type="tel" class="form-input" name="tel" pattern="[0-9]{3}-[0-9]{3}[0-9]{2}[0-9]{2}" title="050-1112222" placeholder=" " required>
                   <svg class="form-icon">
-                    <use href="./images/symbol-defs.svg#phone-form"></use> ></use>
+                    <use href="./images/symbol-defs.svg#phone-form"></use>
                   </svg>
                 </label>
                 <label class="form-field">
                   Пошта
                   <input type="email" class="form-input" name="mail" placeholder=" " required>
                   <svg class="form-icon">
-                    <use href="./images/symbol-defs.svg#mail-form"></use> ></use>
+                    <use href="./images/symbol-defs.svg#mail-form"></use>
                   </svg>
                 </label>
                 <label class="form-field">
@@ -79,7 +79,7 @@
                 </label>
                 <input type="checkbox" name="" class="policy-checkbox" id="policy-check">
                 <label class="policy-box" for="policy-check">
-                  Погоджуюсь з розсилкою та приймаю <a href="#" class="policy-link">Умови договору</a>
+                  Погоджуюсь з розсилкою та приймаю &nbsp;<a href="#" class="policy-link">Умови договору</a>
                 </label>
 
                 <button type="submit" class="form-submit" >Залишити заявку</button>
@@ -378,6 +378,20 @@
           </a>
           </li>
         </ul>
+      </div>
+      <div class="subscribe">
+        <span class="subscribe-title">Підпишіться на розсилку</span>
+        <label class="subscribe-field">
+          <input type="email" class="subscribe-input" name="mail" placeholder=" " required>
+          <span class="subscribe-label">E-mail</span>
+          <button type="submit" class="subscribe-submit">
+            <p class="subscribe-text">Підписатися</p>
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </button>
+        </label>
+        
       </div>
     </div>
     </footer>
