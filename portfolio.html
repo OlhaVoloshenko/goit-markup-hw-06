@@ -241,9 +241,9 @@
         </div>
         <div class="subscribe">
           <span class="subscribe-title">Підпишіться на розсилку</span>
+          <form class="form" autocomplete="off">
           <label class="subscribe-field">
-            <input type="email" class="subscribe-input" name="mail" placeholder=" " required>
-            <span class="subscribe-label">E-mail</span>
+            <input type="email" class="subscribe-input" name="mail" placeholder="E-mail" required>
             <button type="submit" class="subscribe-submit">
               <p class="subscribe-text">Підписатися</p>
               <svg class="subscribe-icon" width="24" height="24">
@@ -251,9 +251,25 @@
               </svg>
             </button>
           </label>
-          
+        </form>
         </div>
       </div>
-    </footer>
+      </footer>
+      <script src="./js/modal.js"></script>
+      <script>
+        (() => {
+          document
+            .querySelector('.js-speaker-form')
+            .addEventListener('submit', e => {
+              e.preventDefault();
+  
+              new FormData(e.currentTarget).forEach((value, name) =>
+                console.log(`${name}: ${value}`),
+              );
+  
+              e.currentTarget.reset();
+            });
+        })();
+      </script>
   </body>
 </html>
